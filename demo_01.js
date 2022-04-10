@@ -1,15 +1,14 @@
 import generate_pdf from './GeneratePDF.js'
-import {select_random_image} from './GetRandomImage.js'
-import select_random_ascii from './GetRandomASCII.js'
+import {select_random_image, select_random_ascii} from './GetRandomImage.js'
 
 // lijst maken
 
-const list_images = []
+let list_images = []
 
 // zoeken op internet: loop array n times
 
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     const afb = await select_random_image()
     list_images.push(afb)
   } 
@@ -22,9 +21,14 @@ const list_images = []
 
 let txts= []
 
-txts.push({text: "My Title", fontSize: "XL"})
-txts.push({text: "My Subtitle 1", fontSize: "L"})
+txts.push({text: "DATALISP", fontSize: "XL"})
+txts.push({text: "A B C D E ABCDE", fontSize: "L"})
+txts.push({text: "A B C D E ABCDE", fontSize: "L"})
+txts.push({text: "A B C D E ABCDE", fontSize: "L"})
+txts.push({text: "A B C D E ABCDE", fontSize: "L"})
 txts.push({text: "My Subtitle 2", fontSize: "L"})
 txts.push({text: "My Subtitle 3", fontSize: "L"})
 
 generate_pdf(list_images, txts)
+
+list_images = null
