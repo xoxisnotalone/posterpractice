@@ -1,0 +1,24 @@
+{
+  "name": "posterpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xoxisnotalone/posterpractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xoxisnotalone/posterpractice/issues"
+  },
+  "homepage": "https://github.com/xoxisnotalone/posterpractice#readme",
+  "dependencies": {
+    "pdfkit": "^0.13.0",
+    "sharp": "^0.30.3"
+  },
+  "type": "module"
+}
